@@ -43,6 +43,10 @@ function App() {
       item.id === id ? { ...item, checked: !item.checked } : item
     );
     setItems(listItem);
+    
+    const myItem=listItem.filter((item) => 
+    item.id===id)
+
   };
   const handleDelete = (id) => {
     const listItem = items.filter((item) => item.id !== id);
