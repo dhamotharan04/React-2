@@ -25,7 +25,7 @@ function App() {
         setFetchErrror(null)
         // console.log(fetchError);
       } catch (err) {
-        setFetchErrror(err.message);
+        setFetchErrror(err.message);;
       }finally{
         setIsLoading(false)
         // console.log('gxfdx');
